@@ -33,14 +33,14 @@
 // ------------------------------------------------------------------------------------------------------------------
 // | BTCLR |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |                  |      |      |       |       |       |       |
 // |       |       |       |       |       |       |                  |      |      |       |       |       |       |
-// |       |       |       |       |       |       |                  |      |      |       |       |       |       |
-// |       |       |       |       |       |       |       |  |       |      |      |   [   |   ]   |   =   |  "|"  |
+// |       |       |       |       |       |       |                  |      |      |       |       |       |  "|"  |
+// |       |       |       |       |       |       |       |  |       |      |      |   [   |   ]   |   =   |       |
 //                         |       |       |       |       |  |  DEL  |      |      |       |
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans   &trans   &trans    &trans    &trans     &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans   &trans   &trans    &trans    &trans     &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans   &trans   &trans    &trans    &trans     &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans   &trans   &trans   &trans   &kp LBKT  &kp RBKT  &kp EQUAL  &kp PIPE
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans   &trans   &trans    &trans    &trans     &kp PIPE
+&trans      &trans        &trans        &trans        &trans        &trans        &trans   &trans   &trans   &trans   &kp LBKT  &kp RBKT  &kp EQUAL  &trans
                                         &trans        &trans        &trans        &trans   &kp DEL  &trans   &trans   &trans
             >;
         };
@@ -49,14 +49,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |      |      |      |      |      |      |                  |      |       |       |      |       |       |
 // |      |      |      |      |      |      |                  |      |       |       |      |       |       |
-// |      |      |      |      |      |      |                  |  <-  |   v   |   ^   |  ->  |       |       |
-// |      |      |      |      |      |      |       |  |       |      |       |   {   |  }   |   +   |   \   |
+// |      |      |      |      |      |      |                  |  <-  |   v   |   ^   |  ->  |       |   \   |
+// |      |      |      |      |      |      |       |  |       |      |       |   {   |  }   |   +   |       |
 //                      |      |      |      |       |  |       |      |       |       |
             bindings = <
 &trans   &trans   &trans   &trans   &trans   &trans                     &trans    &trans    &trans    &trans     &trans    &trans
 &trans   &trans   &trans   &trans   &trans   &trans                     &trans    &trans    &trans    &trans     &trans    &trans
-&trans   &trans   &trans   &trans   &trans   &trans                     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans    &trans
-&trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans    &kp LBRC  &kp RBRC  &kp PLUS   &kp BSLH
+&trans   &trans   &trans   &trans   &trans   &trans                     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans    &kp BSLH
+&trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans    &trans    &kp LBRC  &kp RBRC   &kp PLUS  &trans
                            &trans   &trans   &trans   &trans   &trans   &trans    &trans    &trans
             >;
         };
