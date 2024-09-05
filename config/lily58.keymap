@@ -18,14 +18,14 @@
 // |  ESC  |  1  |  2  |   3   |   4   |   5   |                  |   6   |  7   |  8   |  9   |   0   |   `   |
 // |  TAB  |  Q  |  W  |   E   |   R   |   T   |                  |   Y   |  U   |  I   |  O   |   P   |   -   |
 // |  CTRL |  A  |  S  |   D   |   F   |   G   |                  |   H   |  J   |  K   |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |   C   |   V   |   B   |  "["  |  |  "]"  |   N   |  M   |  ,   |  .   |   /   | SHIFT |
+// | SHIFT |  Z  |  X  |   C   |   V   |   B   | PG_DN |  | PG_UP |   N   |  M   |  ,   |  .   |   /   | SHIFT |
 //                     |  ALT  |  GUI  | LOWER | SPACE |  | ENTER | RAISE | BSPC |  FN  |
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                       &kp N6  &kp N7   &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                        &kp Y   &kp U    &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                        &kp H   &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT   &kp RBKT  &kp N   &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE  &kp BSPC  &mo 2   &kp RET  &mo 3
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                        &kp N6  &kp N7   &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                         &kp Y   &kp U    &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                         &kp H   &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp PG_DN  &kp PG_UP  &kp N   &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE  &kp BSPC   &mo 2   &kp RET  &mo 3
             >;
         };
 
@@ -64,14 +64,14 @@
         function_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |      |  F1  |  F2  |  F3  |  F4  |  F5  |                  |  F6   |  F7   |  F8  |  F9  |  F10  |       |
-// |      |      |      |      |      |      |                  |  F11  |  F12  |      |      | PSCRN | PG_UP |
-// |      | PREV | NEXT |      |      |      |                  |       |       |      |      |       | PG_DN |
+// |      |      |      |      |      |      |                  |  F11  |  F12  |      |      | PSCRN |       |
+// |      | PREV | NEXT |      |      |      |                  |       |       |      |      |       |       |
 // |      | PLAY | MUTE | VOL- | VOL+ |      |       |  |       |       |       |      |      |       |       |
 //                      |      |      |      |       |  |       |       |       |      |
             bindings = <
 &trans   &kp F1      &kp F2      &kp F3        &kp F4        &kp F5                     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &trans
-&trans   &trans      &trans      &trans        &trans        &trans                     &kp F11  &kp F12  &trans   &trans   &kp PSCRN  &kp PG_UP
-&trans   &kp C_PREV  &kp C_NEXT  &trans        &trans        &trans                     &trans   &trans   &trans   &trans   &trans     &kp PG_DN
+&trans   &trans      &trans      &trans        &trans        &trans                     &kp F11  &kp F12  &trans   &trans   &kp PSCRN  &trans
+&trans   &kp C_PREV  &kp C_NEXT  &trans        &trans        &trans                     &trans   &trans   &trans   &trans   &trans     &trans
 &trans   &kp C_PP    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans     &trans
                                  &trans        &trans        &trans   &trans   &trans   &trans   &trans   &trans
             >;
