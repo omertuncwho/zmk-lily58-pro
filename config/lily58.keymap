@@ -26,7 +26,8 @@
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                         &kp H   &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp PG_DN  &kp PG_UP  &kp N   &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE  &kp BSPC   &mo 2   &kp RET  &mo 3
-            >;
+&trackball_pointer
+>;
         };
 
         lower_layer {
