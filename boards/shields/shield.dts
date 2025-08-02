@@ -1,0 +1,11 @@
+/ {
+    compatible = "zmk,trackball";
+};
+
+&i2c1 {
+    trackball@0x0a {
+        compatible = "pimoroni,trackball";
+        reg = <0x0a>;
+        label = "TRACKBALL";
+    };
+};
